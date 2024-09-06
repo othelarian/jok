@@ -1,7 +1,9 @@
 name: GH Delivery
 
 on:
-  push
+  push:
+    tags:
+      - '*'
 
 permissions:
   contents: read

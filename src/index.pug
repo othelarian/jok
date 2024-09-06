@@ -4,10 +4,12 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width,initial-scale=1')
     link(rel='stylesheet', href='style.css')
+    script(src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js")
     script(language='javascript', src='app.js')
   body(onload='App.init()')
+    canvas#confetti
     h2 Les chaotiques en sueur
-    .compteur
+    #compteur
       span#heures.chiffres 00
       span :
       span#minutes.chiffres 00
