@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    link(rel='stylesheet', href='style.css')
+    script(language='javascript', src='app.js')
+  body(onload='App.init()')
+    h2 Les chaotiques en sueur
+    .compteur
+      span#heures.chiffres 00
+      span :
+      span#minutes.chiffres 00
+      span :
+      span#secondes.chiffres 00
+    #winner Félicitations !
