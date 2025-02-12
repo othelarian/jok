@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Grid Calculator
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width,initial-scale=1')
+    script(language='javascript', src='app.js')
+    style.
+      h1 {text-align:center;}
+      svg, .menu {
+        display:block;
+        margin:auto;
+        width: fit-content;
+      }
+      .menu input {width:40px;}
+      #drawzone text {font-size:9px;}
+  body(onload='App.calc()')
+    h1 Grid Calculator
+    .menu
+      label(for='distance') Distance:
+      input#distance(type='number', value='6', onchange='App.calc()')
+      span &nbsp;|&nbsp;
+      label(for='multi') Multiplicator:
+      input#multi(type='number', value='1', onchange='App.calc()')
+    svg#drawzone(
+      xmlns='http://www.w3.org/2000/svg'
+      width=600
+      height=600
+    )
+      rect(width=200,height=200,x=10,y=10,fill='red')
