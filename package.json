@@ -13,9 +13,12 @@
     "chokidar": "^3.6.0",
     "coffeescript": "^2.7.0",
     "esbuild": "^0.23.1",
-    "esbuild-coffeescript": "^2.2.0",
     "express": "^4.19.2",
+    "immer": "^10.1.1",
     "pug": "^3.0.3",
-    "sass": "^1.78.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.78.0",
+    "zustand": "^5.0.3"
   }
 }

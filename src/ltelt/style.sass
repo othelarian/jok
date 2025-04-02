@@ -1,0 +1,177 @@
+html
+  font-size: 12px
+
+dialog
+  width: 80%
+  max-width: 450px
+  margin-top: 10px
+  border: solid 1px black
+
+  &::backdrop
+    background: #0008
+
+h1
+  text-align: center
+
+hr
+  width: 80%
+  margin: 10px auto
+
+.blocks
+  display: flex
+
+.columnBtnList
+  display: flex
+  flex-direction: column
+
+.list
+  //width: calc(100% - 500px)
+  display: none
+
+.menu
+  display: flex
+  justify-content: center
+  gap: 10px
+
+.sheet
+  width: 500px
+  margin: auto
+
+.svgBtn
+  background: #ddd
+  border: none
+
+  &:hover
+    background: #eee
+
+    use
+      fill: #444
+
+  use
+    fill: #999
+
+.switch
+  display: none
+
+.sheetTabs
+  display: flex
+  overflow: auto
+
+.tabsLine
+  display: flex
+
+  button
+    min-width: 40px
+    width: 40px
+    height: 36px
+
+.tabTitle
+  padding: 6px
+  font-weight: bold
+  width: fit-content
+  min-height: 24px
+  font-size: 1.3rem
+
+  &.selected
+    border: solid 1px #ddd
+    border-bottom-color: #333
+    border-bottom-width: 2px
+
+  input
+    font-size: 1.3rem
+    text-align: center
+    background: #eee
+    border: none
+    border-bottom: solid 1px #999
+
+.toggler
+  width: 40
+  height: 20
+
+  line
+    stroke-width: 10px
+    stroke: #ddd
+    stroke-linecap: round
+
+  circle
+    &.trigger
+      stroke: none
+      fill: #ddd
+      cursor: pointer
+      &:hover
+        fill: #aaa
+
+    &.togOff
+      fill: #ccc
+    &.togOn
+      fill: #444
+
+#dialogRoot, .dialogBlock
+  display: flex
+  flex-direction: column
+  gap: 5px
+
+  h2, .dialogContent
+    text-align: center
+
+#sheet
+  display: flex
+  flex-direction: column
+  gap: 5px
+
+  .sheetName
+    display: flex
+    justify-content: center
+    gap: 5px
+
+    label, input
+      font-size: 1.4rem
+      font-weight: bold
+
+    input
+      border: none
+      border-bottom: solid 1px black
+      width: 300px
+
+  .sheetStats
+    display: grid
+    justify-content: center
+    column-gap: 20px
+
+    label
+      font-size: 1.2rem
+      font-weight: bold
+      width: 40px
+      text-align: center
+
+    input
+      font-size: 1.6rem
+      width: 40px
+      height: 40px
+      border-radius: 5px
+
+    .col0
+      grid-column-start: 1
+
+    .col1
+      grid-column-start: 2
+
+    .col2
+      grid-column-start: 3
+
+    .line0
+      grid-row-start: 1
+
+    .line1
+      grid-row-start: 2
+
+@media (max-width: 800px)
+  body
+    display: block
+
+  .list
+    display: none
+
+  .switch
+    //display: block
+    display: none

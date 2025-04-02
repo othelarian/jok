@@ -37,8 +37,6 @@ class App
               r2 = follow[i-1][j] + multi
               r3 = follow[i-1][j-1] + multi * 1.5
               r = Math.min(r1, r2, r3)
-              console.log "r1: #{r1}, r2: #{r2}, r3: #{r3}"
-              console.log "min: #{r}"
               if r <= distance then r else -1
         if res is -1 then []
         else

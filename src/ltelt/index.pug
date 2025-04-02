@@ -1,0 +1,42 @@
+doctype html 
+html
+  head
+    title lT&amp;lT
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='style.css')
+    script(src='app.js') 
+  body(onload='app.init()')
+    svg(xmlns='http://www.w3.org/2000/svg', style='display:none')
+      include defs.pug
+    h1 lT &amp; lT
+    .blocks
+      .sheet
+        .menu
+          button(onclick='app.copyLink()') Copier le lien
+          button(onclick='app.create()') Nouveau perso
+          //
+          button.switch(onclick='app.switch()') Listing
+        hr
+        #sheet
+      .list
+        .menu
+          //
+          button.switch(onclick='app.switch()') Fermer
+        #list
+    dialog#dialog
+      #dialogRoot
+        .dialogBlock#dialogBlockSection
+          h2 Ajouter une section
+          .dialogContent Choisissez la section que vous souhaiter ajouter :
+          //button.dbcSectionFilter(
+            onclick="app.dialog.action('section','onglets')") Onglets
+          //
+          //button(onclick="app.dialog.action('')") aAA
+          //
+        //
+        hr
+        button.svgBtn(onclick='app.dialog.close()')
+          svg(width=24,height=20)
+            use(href='#icon-cross-small')
