@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title Clocky
+    meta(http-equiv='Content-Type', content='text/html;charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    script(src='app.js')
+    link(rel='stylesheet', href='style.css') 
+  body(onload='app.init()')
+    svg#svgzone(
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 400 400'
+    )
+      g#center(transform='translate(200,200)')
+    button#corner(onclick='app.toggleCfg()')
+    #settime.cfg.hide
+      //
+      button() P
+      //
+      // TODO: enable/disable with pause
+      //input.datetime
+      //
+    #setcolors.cfg.hide
+      //
+      div plip
+      //

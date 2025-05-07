@@ -3,6 +3,8 @@
 exports.projects =
   chaotic_je:
     active: no
+  clocky:
+    active: yes
   grid_calc:
     active: yes
   ltelt:
